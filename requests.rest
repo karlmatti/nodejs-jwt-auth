@@ -1,0 +1,28 @@
+GET http://localhost:3000/balance
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyeSIsImlhdCI6MTYwMTg5MzY4OSwiZXhwIjoxNjAxODkzNzA0fQ._ZPTCDTBkESlvvsfCQYRYnbpkJBa-Xv6x5wUB5RC-rE
+
+###
+
+GET http://localhost:3001/notifications
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyeSIsImlhdCI6MTYwMTg5NDE3OCwiZXhwIjoxNjAxODk0MTkzfQ.kUhoSdMyFRyWtLOoqMulB7p_9AzXJVXXIS38phZzBLs
+
+###
+
+POST http://localhost:3002/login
+Content-Type: application/json
+
+{ "username": "Mary" }
+
+###
+
+POST http://localhost:3002/token
+Content-Type: application/json
+
+{ "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyeSIsImlhdCI6MTYwMTg5NDQ3NH0.qrRyn-bM8SWdQKsQplJWM2DLg-3fBHaMJU77tsjNq_s"}
+
+###
+
+DELETE http://localhost:3002/logout
+Content-Type: application/json
+
+{ "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyeSIsImlhdCI6MTYwMTg5NDQ3NH0.qrRyn-bM8SWdQKsQplJWM2DLg-3fBHaMJU77tsjNq_s"}
